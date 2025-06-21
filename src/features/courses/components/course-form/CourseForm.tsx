@@ -1,8 +1,10 @@
+import { useEffect } from 'react';
 import { Button } from '../../../../components/common';
 import '../../../../shared/css/forms.css';
 import { useCourseForm } from '../../hooks';
 import type { CourseFormProps } from './course-form.props';
 import styles from './CourseForm.module.css';
+import { Toaster, toast } from 'sonner';
 
 export const CourseForm = ({ close, initialInfo }: CourseFormProps) => {
   const {
@@ -14,6 +16,13 @@ export const CourseForm = ({ close, initialInfo }: CourseFormProps) => {
   } = useCourseForm(close, initialInfo);
 
   const isEditing = Boolean(initialInfo);
+
+  useEffect(() => {
+    if (error) {
+      toast.error(error);
+    }
+  }, [error]);
+
 
   return (
     <div className={ styles.container }>
@@ -77,13 +86,7 @@ export const CourseForm = ({ close, initialInfo }: CourseFormProps) => {
         />
       </form>
 
-      {
-        error && (
-          <div className="form-error">
-            <p>{ error }</p>
-          </div>
-        )
-      }
+      <Toaster position="top-right" />
     </div>
   );
 };
