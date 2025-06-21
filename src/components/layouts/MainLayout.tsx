@@ -25,13 +25,17 @@ export const MainLayout = () => {
     <div className={ styles.layout }>
       <header className={ styles.header }>
         <div className={ styles.header_inner }>
-          <button className={ styles.menu_button } onClick={ toggleMenu } aria-label="Toggle menu">
+          <button 
+            aria-label="Toggle menu"
+            className={ `button-icon empty-button ${ styles.menu_button }` }
+            onClick={ toggleMenu } 
+          >
             { menuOpen ? <IoMdClose size={ 24 } /> : <IoMenuOutline size={ 24 } /> }
           </button>
           <h1 className={ styles.logo }>Imagine Apps Test</h1>
         </div>
 
-        <button className={ styles.menu_button } onClick={ handleLogOut } aria-label="Log out">
+        <button className="button-icon empty-button" onClick={ handleLogOut } aria-label="Log out">
           <LuLogOut  size={ 24 } />
         </button>
       </header>

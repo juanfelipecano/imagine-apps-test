@@ -34,16 +34,6 @@
   align-items: center;
 }
 
-.menu_button {
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  padding: 0.25rem;
-  display: flex;
-  align-items: center;
-}
-
 .container {
   display: flex;
   flex: 1;
