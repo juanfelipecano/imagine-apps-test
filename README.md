@@ -10,6 +10,8 @@ Aplicación web para la gestión de cursos, usuarios inscritos y estadísticas, 
 
 ---
 
+Visitar: https://imagine-apps-test.juanbetancur.dev
+
 ## 🚀 Instrucciones para correr el proyecto localmente
 
 ### 1. Clonar el repositorio
