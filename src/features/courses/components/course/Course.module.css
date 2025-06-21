@@ -1,0 +1,37 @@
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.card header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card:hover,
+.card:focus-within {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #4a5568;
+}
+
+.meta {
+  font-size: 0.875rem;
+  color: #718096;
+}

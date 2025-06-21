@@ -1,0 +1,11 @@
+.skeleton_title {
+  width: 60%;
+  height: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.skeleton_text {
+  width: 40%;
+  height: 14px;
+  margin-bottom: 0.5rem;
+}

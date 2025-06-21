@@ -1,0 +1,32 @@
+.empty-button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.button-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-tinted);
+  color: var(--white);
+  border-radius: 3px;
+}
+
+.button-icon:disabled {
+  opacity: 0.6;
+  cursor: initial;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}

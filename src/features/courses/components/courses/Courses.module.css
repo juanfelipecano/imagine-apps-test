@@ -1,0 +1,35 @@
+.courses {
+  padding: 2rem 1rem;
+}
+
+.courses header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.courses_action {
+  align-self: center;
+}
+
+.courses ul {
+  list-style-type: none;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .courses header {
+    justify-content: start;
+    gap: 1rem;
+  }
+
+  .courses ul {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .courses li {
+    width: 30rem;
+  }
+}

@@ -1,0 +1,12 @@
+:root {
+  --primary: #7c3aed;
+  --primary-tinted: #6d28d9;
+
+  --dark: #0e1a2b;
+  --light: #ccc;
+
+  --text-dark: #333;
+  --text-light: #777;
+
+  --white: #fff;
+}

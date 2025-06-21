@@ -1,0 +1,48 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  min-height: 100dvh;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+img, video, svg {
+  height: auto;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%; /* 16px */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition: none;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

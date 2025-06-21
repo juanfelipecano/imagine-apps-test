@@ -1,0 +1,21 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 0.6rem 1rem;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.form-error {
+  color: #da3636;
+}

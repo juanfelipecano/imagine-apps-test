@@ -1,0 +1,28 @@
+.users {
+  padding: 2rem 1rem;
+}
+
+.users h1 {
+  margin-bottom: 1rem;
+}
+
+.users ul {
+  list-style-type: none;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .users ul {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .users li {
+    width: 30rem;
+  }
+
+  .search_container {
+    width: 20rem;
+  }
+}
