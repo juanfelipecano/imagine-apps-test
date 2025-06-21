@@ -12,6 +12,17 @@ Aplicación web para la gestión de cursos, usuarios inscritos y estadísticas, 
 
 Visitar: https://imagine-apps-test.juanbetancur.dev
 
+## 🧪 Usuarios de prueba
+
+Para propósitos de prueba, puedes iniciar sesión con cualquiera de los siguientes correos electrónicos:
+
+- juan@example.com  
+- andres@example.com  
+- ana@example.com  
+- sara@example.com  
+
+> La contraseña para cualquiera es 123.
+
 ## 🚀 Instrucciones para correr el proyecto localmente
 
 ### 1. Clonar el repositorio
