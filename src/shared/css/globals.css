@@ -12,9 +12,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-tinted);
+  background-color: var(--primary);
   color: var(--white);
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .button-icon:disabled {

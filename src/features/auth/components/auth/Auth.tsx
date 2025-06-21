@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
+import { Toaster, toast } from 'sonner';
 import { Button } from '../../../../components/common';
 import { ApplicationData } from '../../../../config';
 import { useStorage } from '../../../../hooks';
@@ -19,11 +20,9 @@ export const Auth = () => {
     password: '',
   });
 
-  const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const onInputchange = (event: unknown) => {
-    setError(null);
     const target = (event as Event).target as HTMLInputElement;
     const { name, value } = target;
 
@@ -35,7 +34,7 @@ export const Auth = () => {
 
   const handleLogin = async () => {
     if (!Patterns.email.test(formState.email)) {
-      setError('Type a valid Email');
+      toast.error('Type a valid Email');
       return;
     }
 
@@ -46,7 +45,7 @@ export const Auth = () => {
       await setItem(ApplicationData.user, user);
       navigate('/home', { replace: true });
     } catch {
-      setError('Invalid credentials');
+      toast.error('Invalid credentials');
     } finally {
       setIsLoading(false);
     }
@@ -90,11 +89,9 @@ export const Auth = () => {
             click={ handleLogin }
           />
         </form>
-
-        <div className="form-error">
-          { error && <p>{ error }</p> }
-        </div>
       </div>
+
+      <Toaster position="top-right" />
     </div>
   )
 }
